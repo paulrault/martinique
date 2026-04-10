@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Martinique</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #00a859;
+      --dark: #1c1c1c;
+      --light: #f5f5f5;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: var(--light);
+      color: var(--dark);
+    }
+
+    /* NAVBAR */
+    .navbar {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      z-index: 1000;
+    }
+
+    .navbar h1 {
+      color: var(--primary);
+    }
+
+    .navbar a {
+      text-decoration: none;
+      margin-left: 20px;
+      color: var(--dark);
+      font-weight: 500;
+    }
+
+    .navbar a:hover {
+      color: var(--primary);
+    }
+
+    /* HERO */
+    .hero {
+      height: 100vh;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/6/6d/Martinique_beach.jpg') center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 20px;
+      position: relative;
+    }
+
+    /* Overlay sombre pour améliorer la lisibilité */
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.45);
+    }
+
+    .hero > div {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+    }
+
+    /* SECTION */
+    .section {
+      padding: 80px 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2rem;
+    }
+
+    /* CARDS */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      transition: 0.3s;
+      text-decoration: none;
+      color: var(--dark);
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: var(--primary);
+    }
+
+    /* IMAGE */
+    .image-section {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .image-section img {
+      width: 200px;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    /* RESPONSIVE */
+    @media(max-width: 768px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      .navbar {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <h1>Martinique</h1>
+    <div>
+      <a href="Martinique.html">Accueil</a>
+      <a href="histoiredelamartinique.html">Histoire</a>
+      <a href="situationgeographique.html">Géographie</a>
+      <a href="situationpolitique.html">Politique</a>
+      <a href="situationfinanciere.html">Économie</a>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div>
+      <h2>Découvrir la Martinique</h2>
+      <p>Une île entre culture, histoire et paysages exceptionnels</p>
+    </div>
+  </section>
+
+  <!-- SECTION PRINCIPALE -->
+  <section class="section">
+    <h2>Explorer</h2>
+
+    <div class="grid">
+      <a href="histoiredelamartinique.html" class="card">
+        <h3>Histoire</h3>
+        <p>Découvrez le passé fascinant de l'île</p>
+      </a>
+
+      <a href="situationgeographique.html" class="card">
+        <h3>Géographie</h3>
+        <p>Explorez les paysages et le territoire</p>
+      </a>
+
+      <a href="situationpolitique.html" class="card">
+        <h3>Politique</h3>
+        <p>Comprendre l'organisation politique</p>
+      </a>
+
+      <a href="situationfinanciere.html" class="card">
+        <h3>Économie</h3>
+        <p>Analyse de la situation financière</p>
+      </a>
+
+      <a href="actualites.html" class="card">
+        <h3>Actualités</h3>
+        <p>Suivez les dernières infos</p>
+      </a>
+    </div>
+
+    <div class="image-section">
+      <img src="https://www.grapheine.com/wp-content/uploads/2023/02/drapeau-de-Martinique.svg_.jpg" alt="Drapeau Martinique">
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Site web créé par Paul Rault</p>
+  </footer>
+
+</body>
+</html>

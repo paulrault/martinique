@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Histoire de la Martinique</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #00a859;
+      --dark: #1c1c1c;
+      --light: #f5f5f5;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: var(--light);
+      color: var(--dark);
+    }
+
+    /* NAVBAR */
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: white;
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 40px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      z-index: 1000;
+    }
+
+    .navbar h1 {
+      color: var(--primary);
+    }
+
+    .navbar a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: var(--dark);
+    }
+
+    .navbar a:hover {
+      color: var(--primary);
+    }
+
+    /* HERO */
+    .hero {
+      height: 70vh;
+      background: url('https://www.herodote.net/_image/martinique-1635.jpg') center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+    }
+
+    /* SECTION */
+    .section {
+      padding: 80px 40px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .block {
+      display: flex;
+      gap: 30px;
+      margin-bottom: 50px;
+      align-items: center;
+    }
+
+    .block img {
+      width: 50%;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    .block-text {
+      width: 50%;
+    }
+
+    .block-text h3 {
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+
+    /* INVERSE */
+    .reverse {
+      flex-direction: row-reverse;
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* MOBILE */
+    @media(max-width: 768px) {
+      .block {
+        flex-direction: column;
+      }
+
+      .block img,
+      .block-text {
+        width: 100%;
+      }
+
+      .hero h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <h1>Martinique</h1>
+  <div>
+    <a href="Martinique.html">Accueil</a>
+    <a href="histoiredelamartinique.html">Histoire</a>
+    <a href="situationgeographique.html">Géographie</a>
+    <a href="situationpolitique.html">Politique</a>
+    <a href="situationfinanciere.html">Économie</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <h2>Histoire de la Martinique</h2>
+</section>
+
+<!-- CONTENU -->
+<section class="section">
+
+  <div class="block">
+    <img src="https://www.herodote.net/_image/martinique-1635.jpg">
+    <div class="block-text">
+      <h3>Colonisation</h3>
+      <p>
+        En 1635, les Français arrivent sur l'île et la colonisent. Ils développent des plantations agricoles,
+        notamment de canne à sucre, qui devient rapidement la principale richesse de l'île.
+      </p>
+    </div>
+  </div>
+
+  <div class="block reverse">
+    <img src="https://resistanceinventerre.wordpress.com/wp-content/uploads/2016/03/guadeloupe-mart1.jpg?w=584">
+    <div class="block-text">
+      <h3>Département français</h3>
+      <p>
+        En 1946, la Martinique devient un département français. Elle est alors intégrée pleinement à la République
+        française, avec les mêmes droits que les régions métropolitaines.
+      </p>
+    </div>
+  </div>
+
+  <div class="block">
+    <img src="https://img.lemde.fr/2024/09/21/0/0/6048/4024/664/0/75/0/47f9f27_5735254-01-06.jpg">
+    <div class="block-text">
+      <h3>Aujourd'hui</h3>
+      <p>
+        Aujourd’hui, la Martinique possède une identité culturelle forte. Elle fait face à des défis économiques
+        et environnementaux, notamment liés au chlordécone, tout en restant un territoire dynamique et riche culturellement.
+      </p>
+    </div>
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Site web créé par Paul Rault</p>
+</footer>
+
+</body>
+</html>
